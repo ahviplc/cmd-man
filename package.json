@@ -1,0 +1,51 @@
+{
+  "name": "cmd-man",
+  "version": "1.0.0",
+  "description": "cmd-man,一款基于nodejs的专属于你的命令行工具.",
+  "type": "commonjs",
+  "main": "bin/index.js",
+  "bin": {
+    "cmd-man": "bin/index.js",
+    "cm": "bin/index.js"
+  },
+  "scripts": {
+    "app": "node bin/index.js",
+    "app-w": "nodemon bin/index.js",
+    "app-test": "node tests/main.js",
+    "lint": "eslint bin/index.js tests/main.js \"tests/**/*.js\"",
+    "lint-fix": "eslint bin/index.js tests/main.js \"tests/**/*.js\" --fix",
+    "jest": "jest",
+    "test": "echo \\\"Error: no tests specified\\\" && exit 1"
+  },
+  "files": [
+    "bin",
+    "package.json",
+    "README.md",
+    ".gitignore"
+  ],
+  "engines": {
+    "node": ">12.0.0"
+  },
+  "keywords": [
+    "cmd-man",
+    "cmd",
+    "nodejs",
+    "node"
+  ],
+  "author": "LC ahlc@sina.cn",
+  "homepage": "https://gitee.com/ahviplc/cmd-man",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^27.0.4",
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3"
+  }
+}
