@@ -46,6 +46,14 @@ npm install -g cmd-man
 yarn add global cmd-man
 ```
 
+`全局命令使用` `使用下面命令`
+
+```sh
+cmd-man
+或者
+cm
+```
+
 ## Usage
 
 ```sh
