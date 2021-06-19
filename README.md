@@ -12,9 +12,13 @@
 
 也可package.json配置`"type":"module",` 使用esm规范. 默认为`"type": "commonjs",`
 
-### 🏠 [Homepage](https://gitee.com/ahviplc/cmd-man)
+### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/cmd-man)
 
-### ✨ [Demo]( https://gitee.com/ahviplc/cmd-man)
+### ✨ [Demo-gitee]( https://gitee.com/ahviplc/cmd-man)
+
+### 🏠 [Homepage-github](https://github.com/ahviplc/cmd-man)
+
+### ✨ [Demo-github]( https://github.com/ahviplc/cmd-man)
 
 ## Prerequisites
 
