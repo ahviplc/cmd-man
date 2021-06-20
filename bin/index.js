@@ -174,4 +174,5 @@ if (!options.all) {
 }
 
 // 执行命令
-// node bin/index.js -cc
+// node bin/index.js -a
+// node bin/index.js --all
