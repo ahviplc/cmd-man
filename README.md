@@ -68,6 +68,8 @@ npm run app
 
 ```sh
 yarn run test
+或者
+jest
 ```
 
 `Done`
@@ -84,6 +86,14 @@ yarn run app-test
 https://github.com/tj/commander.js
 
 https://codechina.csdn.net/mirrors/tj/commander.js
+
+https://github.com/eslint/eslint
+
+https://eslint.org/
+
+http://eslint.cn/
+
+http://eslint.cn/docs/rules/
 ```
 
 ## Author
