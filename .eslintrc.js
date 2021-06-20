@@ -13,10 +13,12 @@ module.exports = {
     'no-var': 'warn', // 不使用 var
     'one-var': 'off',
     'space-before-function-paren': ['error', 'never'],
-    // 关闭语句强制分号结尾 semi: ['error', 'always']
+    // 关闭语句强制分号结尾
+    // semi: ['error', 'always']
+    // always (默认) 要求在语句末尾使用分号 "never" 禁止在语句末尾使用分号 (除了消除以 [、(、/、+ 或 - 开始的语句的歧义)
     // semi: ['warn'], 和 semi: [1], 等价
     // semi: [2], 代表 error 和 semi: ['error'], 等价
-    semi: [1], // warn级别 不要分号
+    semi: [1, 'never'], // warn级别 不要分号
     quotes: ['warn', 'single'], // 单引号
     indent: [1, 2], // warn级别 设置缩进为2
     'no-void': 'error', // 禁用 void 操作符
