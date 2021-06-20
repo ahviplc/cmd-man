@@ -66,10 +66,20 @@ cm
 
 ## Usage
 
+`针对的是你使用源码的方式 安装好依赖 执行` 
+
+`其他情况 最好从npm全局安装 使用全局命令直接执行`
+
 ```sh
 yarn app
 或者
-npm run app
+yarn app -a
+或者
+npm run app (不可用)
+或者
+node ./bin/index.js
+或者
+node ./bin/index.js -a
 ```
 
 ## Run tests
