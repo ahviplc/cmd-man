@@ -19,5 +19,10 @@ console.log('pizza details:')
 if (options.small) console.log('- small pizza size')
 if (options.pizzaType) console.log(`- ${options.pizzaType}`)
 
+if (options.lc) {
+  console.log('options.lc', options.lc)
+  console.log('hello lc')
+}
+
 // test命令
 // node test.js - d - s - p cheese

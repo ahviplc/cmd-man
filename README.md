@@ -14,11 +14,11 @@
 
 ### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/cmd-man)
 
-### ✨ [Demo-gitee]( https://gitee.com/ahviplc/cmd-man)
+### ✨ [Demo-gitee](https://gitee.com/ahviplc/cmd-man)
 
 ### 🏠 [Homepage-github](https://github.com/ahviplc/cmd-man)
 
-### ✨ [Demo-github]( https://github.com/ahviplc/cmd-man)
+### ✨ [Demo-github](https://github.com/ahviplc/cmd-man)
 
 ## Prerequisites
 
@@ -94,6 +94,20 @@ https://eslint.org/
 http://eslint.cn/
 
 http://eslint.cn/docs/rules/
+
+https://github.com/feross/standard
+
+https://github.com/standard/standard
+
+https://hub.fastgit.org/standard/standard
+
+https://hub.fastgit.org/standard/standard/blob/master/docs/RULES-zhcn.md
+
+https://github1s.com/FrendEr/show-man/blob/HEAD/bin/show.js
+
+https://www.npmjs.com/package/chalk
+
+https://github.com/chalk/chalk
 ```
 
 ## Author
