@@ -37,7 +37,7 @@
 ## Install
 
 ```sh
-yarn
+yarn (最好使用yarn 感觉使用npm有些依赖会缺失)
 yarn install
 或者
 npm i

@@ -2,6 +2,23 @@
 const os = require('os')
 const fs = require('fs')
 const chalk = require('chalk')
+// 引入工具类合集
+const utils = require('./utils/utils')
+
+// console.log(utils)
+// console.log('utils.getPWD()', utils.getPWD())
+// console.log('utils.getPWD2()', utils.getPWD2())
+// console.log('utils.getRealProPWD()', utils.getRealProPWD())
+// console.log('utils.getProPWD()', utils.getProPWD())
+
+// utils.getPWD() /Volumes/MacOS-SSD-LCKu/DevelopSoftKu/idea/codeKu/cmd-man/bin
+// utils.getPWD2() /Volumes/MacOS-SSD-LCKu/DevelopSoftKu/idea/codeKu/cmd-man/bin/utils
+// utils.getRealProPWD() /Volumes/MacOS-SSD-LCKu/DevelopSoftKu/idea/codeKu/cmd-man/
+// utils.getProPWD() /Volumes/MacOS-SSD-LCKu/DevelopSoftKu/idea/codeKu/cmd-man/bin/
+
+// 获取package.json数据的object对象
+// const packageInfoObj = utils.getPackageInfo3()
+const packageInfoObj = utils.getPackageInfo4('package.json')
 
 console.log('\n ======================================')
 console.log(' |  ' + chalk.white('cmd-man ') + chalk.green.bold.bgWhite('Show Your PC Env') + '  |')
@@ -11,17 +28,17 @@ const { Command } = require('commander') // (normal include)
 const program = new Command()
 
 program
-  .version('0.1.0')
+  .version(packageInfoObj.version, '-V, --version', 'output cmd-man the version number')
   .description('Show Your PC Env')
-  .option('-l, --language <default zh>', 'select language => zh | en')
+  .option('-l, --language <default zh>', 'select language => zh | en', 'zh')
   .option('-a, --all', 'output all information')
-  .option('-ip,--ip', 'output ip address')
-  .option('-os,--os', 'output operator system')
-  .option('-arch,--arch', 'output processor architecture')
-  .option('-tm,--tm', 'output total memory')
-  .option('-fm,--fm', 'output free memory')
-  .option('-cpu,--cpu', 'output cpu detail')
-  .option('-host,--host', 'output host in darwin')
+  .option('-ip, --ip', 'output ip address')
+  .option('-os, --os', 'output operator system')
+  .option('-arch, --arch', 'output processor architecture')
+  .option('-tm, --tm', 'output total memory')
+  .option('-fm, --fm', 'output free memory')
+  .option('-cpu, --cpu', 'output cpu detail')
+  .option('-host, --host', 'output host in darwin')
   .helpOption('-h, --help', 'display help for command')
 
 // console.log(program.usage())
@@ -29,7 +46,6 @@ program
 // process.argv 数组下标2之后 是实际的入参 所以 process.argv.slice(2) 截取一下
 if (!process.argv.slice(2).length) {
   program.outputHelp()
-  // return
 }
 
 program.parse(process.argv)

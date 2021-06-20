@@ -12,8 +12,8 @@
     "app": "node bin/index.js",
     "app-w": "nodemon bin/index.js",
     "app-test": "node tests/main.js",
-    "lint": "eslint bin/index.js tests/main.js \"tests/**/*.js\"",
-    "lint-fix": "eslint bin/index.js tests/main.js \"tests/**/*.js\" --fix",
+    "lint": "eslint bin/index.js tests/main.js \"bin/**/*.js\" \"tests/**/*.js\"",
+    "lint-fix": "eslint bin/index.js tests/main.js \"bin/**/*.js\" \"tests/**/*.js\" --fix",
     "jest": "jest",
     "test": "echo \\\"Error: no tests specified\\\" && exit 1"
   },
