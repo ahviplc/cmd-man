@@ -12,6 +12,10 @@
 
 也可package.json配置`"type":"module",` 使用esm规范. 默认为`"type": "commonjs",`
 
+### 🏠 [npm | ahviplc](https://www.npmjs.com/~ahviplc)
+
+### 🏠 [npm | cmd-man](https://www.npmjs.com/package/cmd-man)
+
 ### 🏠 [Homepage-gitee](https://gitee.com/ahviplc/cmd-man)
 
 ### ✨ [Demo-gitee](https://gitee.com/ahviplc/cmd-man)
@@ -19,6 +23,12 @@
 ### 🏠 [Homepage-github](https://github.com/ahviplc/cmd-man)
 
 ### ✨ [Demo-github](https://github.com/ahviplc/cmd-man)
+
+## cmd-man npm api
+
+`可以查看此npm模块的信息json串`
+
+> http://registry.npmjs.org/cmd-man
 
 ## Prerequisites
 
