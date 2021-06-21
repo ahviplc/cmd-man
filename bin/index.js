@@ -91,6 +91,7 @@ const cmdMap = {
       if (os.networkInterfaces().以太网) {
         return console.log(chalk.green(label.ip), os.networkInterfaces().以太网[1].address)
       }
+      return console.log(chalk.green(label.ip), 'networkInterfaces下没有 以太网 属性,无法得出ip')
     }
 
     // TODO 代码待完善
