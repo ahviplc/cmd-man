@@ -6,7 +6,12 @@ const path = require('path')
 // 写法1
 // 获取package.json数据的object对象
 exports.getPackageInfo = () => {
-  const _packageInfo = fs.readFileSync('../package.json')
+  // 同步读取
+  // 指定编码 encoding utf-8
+  // 指定文件系统 flag  默认值: 'r'
+  // 如果options只是传字符串 则它代表是字符编码 如果指定了 encoding 选项，则此函数返回字符串。 否则它返回缓冲区
+  // 这里传的是 Object 将 encoding 和 flag 都指定了
+  const _packageInfo = fs.readFileSync('../package.json', { encoding: 'utf-8', flag: 'r' })
   // json字符串 转成 object对象
   return JSON.parse(_packageInfo)
 }
@@ -14,7 +19,10 @@ exports.getPackageInfo = () => {
 // 写法2
 // 获取package.json数据的object对象
 function getPackageInfo2 () {
-  const _packageInfo = fs.readFileSync('../package.json')
+  // 同步读取
+  // 指定编码 encoding utf-8
+  // 如果options只是传字符串 则它代表是字符编码 如果指定了 encoding 选项，则此函数返回字符串。 否则它返回缓冲区
+  const _packageInfo = fs.readFileSync('../package.json', 'utf-8')
   // json字符串 转成 object对象
   return JSON.parse(_packageInfo)
 }
@@ -24,7 +32,10 @@ exports.getPackageInfo2 = getPackageInfo2
 // 写法3
 // 获取package.json数据的object对象
 function getPackageInfo3 () {
-  const _packageInfo = fs.readFileSync(path.join(getRealProPWD(), 'package.json'))
+  // 同步读取
+  // 指定编码 encoding utf-8
+  // 如果options只是传字符串 则它代表是字符编码 如果指定了 encoding 选项，则此函数返回字符串。 否则它返回缓冲区
+  const _packageInfo = fs.readFileSync(path.join(getRealProPWD(), 'package.json'), 'utf-8')
   // json字符串 转成 object对象
   return JSON.parse(_packageInfo)
 }
@@ -32,10 +43,13 @@ function getPackageInfo3 () {
 // 写法4
 // 获取package.json数据的object对象
 // 参数说明
-// filePath 文件路径 默认从项目根目录开始
+// filePath 文件路径 默认从项目根目录开始 只支持json文件
 exports.getPackageInfo4 = (filePath) => {
   // console.log('...filePath', path.join(getRealProPWD(), filePath)) // ...filePath /Volumes/MacOS-SSD-LCKu/DevelopSoftKu/idea/codeKu/cmd-man/package.json
-  const _packageInfo = fs.readFileSync(path.join(getRealProPWD(), filePath))
+  // 同步读取
+  // 指定编码 encoding utf-8
+  // 如果options只是传字符串 则它代表是字符编码 如果指定了 encoding 选项，则此函数返回字符串。 否则它返回缓冲区
+  const _packageInfo = fs.readFileSync(path.join(getRealProPWD(), filePath), 'utf-8')
   // json字符串 转成 object对象
   return JSON.parse(_packageInfo)
 }

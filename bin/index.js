@@ -86,6 +86,19 @@ const map = {
 
 const cmdMap = {
   ip: function (label) {
+    // 不是 darwin 是 win32
+    if (process.platform !== 'darwin' && process.platform === 'win32') {
+      if (os.networkInterfaces().以太网) {
+        return console.log(chalk.green(label.ip), os.networkInterfaces().以太网[1].address)
+      }
+    }
+
+    // TODO 代码待完善
+    // 其他情况
+    // 不是 darwin 是 win64
+    // 不是 darwin 是 linux
+
+    // 最后肯定是 darwin 的情况
     console.log(chalk.green(label.ip), os.networkInterfaces().en0[1].address)
   },
   os: function (label) {
