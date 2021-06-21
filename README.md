@@ -52,9 +52,11 @@ npm install
 npm i -g cmd-man
 或者
 npm install -g cmd-man
-或者 TODO yarn
+或者
 yarn add global cmd-man
 ```
+
+`注意yarn全局目录的bin要在加入环境变量,使用此命令,才可以被找到.`
 
 `全局命令使用` `使用下面命令`
 
