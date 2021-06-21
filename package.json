@@ -1,6 +1,6 @@
 {
   "name": "cmd-man",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cmd-man,一款基于nodejs的专属于你的命令行工具.",
   "type": "commonjs",
   "main": "bin/index.js",
