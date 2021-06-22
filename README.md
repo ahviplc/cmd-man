@@ -68,7 +68,7 @@ cm
 
 ## Usage
 
-`针对的是你使用源码的方式 安装好依赖 执行` 
+`针对的是你使用源码的方式 安装好依赖 执行`
 
 `其他情况 最好从npm全局安装 使用全局命令直接执行`
 
@@ -130,6 +130,12 @@ https://github1s.com/FrendEr/show-man/blob/HEAD/bin/show.js
 https://www.npmjs.com/package/chalk
 
 https://github.com/chalk/chalk
+
+Node.js 中文网
+http://nodejs.cn/
+
+API 文档 - Node.js 中文网
+http://api.nodejs.cn/
 ```
 
 ## Author
